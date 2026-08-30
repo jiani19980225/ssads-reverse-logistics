@@ -1,0 +1,5 @@
+# Optional dependency for the DeepSeek LLM extractor (src/s2s/extractors/deepseek.py).
+# Not required for cache-backed reproduction. DeepSeek exposes an
+# OpenAI-compatible endpoint; install this only for previously unseen notes and
+# provide DEEPSEEK_API_KEY.
+openai>=1.0

@@ -1,0 +1,32 @@
+============================================================================
+ERROR (OVERESTIMATION) RATE  (sigma>=tau_h & phi>0.7 & true_yield<0.3)
+============================================================================
+Scenario                 extr.      bad score-skip   total   cond.%   prev.%
+----------------------------------------------------------------------------
+S1: IT Infrastructure    keyword    282       5909   15000    4.77%    1.88%
+                         LLM        126       4614   15000    2.73%    0.84%
+S2: Aviation MRO         keyword    421       4188   15000   10.05%    2.81%
+                         LLM          0       2675   15000    0.00%    0.00%
+S3: Consumer Electronics keyword      0          0   30000      n/a    0.00%
+                         LLM          0      10767   30000    0.00%    0.00%
+----------------------------------------------------------------------------
+cond.% = bad / high-condition, high-signal-quality skips
+prev.% = bad / evaluated assets (batch prevalence)
+LLM rows read phi/sigma from the cached DeepSeek responses (same asset stream).
+
+====================================================================
+CAPACITY SENSITIVITY  (SSADS-Keyword TRV: half capacity vs full)
+====================================================================
+Scenario                           full TRV       half TRV    change
+--------------------------------------------------------------------
+S1: IT Infrastructure               611,007        607,385     -0.6%
+S2: Aviation MRO                  1,602,971        802,473    -49.9%
+S3: Consumer Electronics             71,202     infeasible       n/a
+
+====================================================================
+CASE STUDIES  (S1 deterministic keyword extractor)
+====================================================================
+Case                              phi    sigma
+--------------------------------------------------------------------
+Correct skip (clean)            0.925    0.925
+Low-condition read (damaged)    0.400    0.875

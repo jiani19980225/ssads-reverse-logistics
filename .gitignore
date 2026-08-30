@@ -1,0 +1,25 @@
+# Local secrets — never commit API keys
+.deepseek_key
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+.DS_Store
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+
+# Generated experiment outputs (llm_cache is committed intentionally)
+experiments/outputs/*.csv
+experiments/outputs/*.png
+experiments/data/raw/
+experiments/data/processed/

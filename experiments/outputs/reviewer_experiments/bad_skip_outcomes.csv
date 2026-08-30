@@ -1,0 +1,10 @@
+scenario,extractor,n_seeds,bad_high_score_skip_count,routed_refurbish_count,routed_component_recovery_count,routed_scrap_count,realized_net_value_total,realized_net_value_mean,negative_net_value_count,negative_net_value_rate
+S1: IT Infrastructure,keyword,30,282,0,282,0,67532.728,239.478,13,0.046099
+S1: IT Infrastructure,strong,30,0,0,0,0,0.0,n/a,0,n/a
+S1: IT Infrastructure,llm,30,126,0,126,0,32703.517,259.552,3,0.02381
+S2: Aviation MRO,keyword,30,421,0,333,88,505322.709,1200.291,35,0.083135
+S2: Aviation MRO,strong,30,0,0,0,0,0.0,n/a,0,n/a
+S2: Aviation MRO,llm,30,0,0,0,0,0.0,n/a,0,n/a
+S3: Consumer Electronics,keyword,30,0,0,0,0,0.0,n/a,0,n/a
+S3: Consumer Electronics,strong,30,0,0,0,0,0.0,n/a,0,n/a
+S3: Consumer Electronics,llm,30,0,0,0,0,0.0,n/a,0,n/a

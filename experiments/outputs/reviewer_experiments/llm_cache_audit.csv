@@ -1,0 +1,4 @@
+scenario,model,api_date,cache_file,cache_total_entries,generated_unique_notes,covered_generated_notes,missing_generated_notes,valid_cached_generated_entries,invalid_or_unparseable_covered_entries,live_parse_failures
+S1: IT Infrastructure,deepseek-chat,not_recorded,outputs/llm_cache/s1_deepseek_deepseek-chat.json,27,27,27,0,27,0,not_recorded
+S2: Aviation MRO,deepseek-chat,not_recorded,outputs/llm_cache/s2_deepseek_deepseek-chat.json,8477,4840,4840,0,4840,0,not_recorded
+S3: Consumer Electronics,deepseek-chat,not_recorded,outputs/llm_cache/s3_deepseek_deepseek-chat.json,43,43,43,0,43,0,not_recorded

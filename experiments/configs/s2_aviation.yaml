@@ -1,0 +1,95 @@
+# S2: Aviation MRO - stylized benchmark assumptions
+# See calibration/ASSUMPTION_PROVENANCE.md for scope and provenance.
+name: s2_aviation_mro
+n_assets: 500
+
+asset_types:
+  - {name: structural, weight: 0.38, components: {skin_panel: 1, frame_section: 1}}
+  - {name: cabin_systems, weight: 0.20, components: {battery: 2, lighting_unit: 3, seat_assembly: 1}}
+  - {name: doors_surfaces, weight: 0.18, components: {door_assembly: 1, flight_surface: 1}}
+  - {name: engine_propulsion, weight: 0.05, components: {turbine_blade: 4, bearing: 6}}
+  - {name: avionics, weight: 0.19, components: {nav_unit: 1, comm_radio: 1, display: 2}}
+
+# Assumed latent condition mix and corresponding true-yield ranges.
+note_distribution:
+  corroded: 0.20
+  cracked: 0.17
+  inoperative: 0.07
+  failed: 0.03
+  worn: 0.25
+  serviceable: 0.28
+
+condition_yield_ranges:
+  corroded: [0.20, 0.50]
+  cracked: [0.10, 0.40]
+  inoperative: [0.30, 0.60]
+  failed: [0.05, 0.25]
+  worn: [0.40, 0.70]
+  serviceable: [0.75, 0.95]
+
+note_noise:
+  p_omit: 0.15
+  p_mislabel: 0.25
+
+realized_yield_concentration: 20.0
+
+# Assumed serviceable recovery values.
+prices:
+  skin_panel: 3500
+  frame_section: 5500
+  battery: 1400
+  lighting_unit: 350
+  seat_assembly: 2750
+  door_assembly: 10000
+  flight_surface: 14000
+  turbine_blade: 4000
+  bearing: 800
+  nav_unit: 16500
+  comm_radio: 5500
+  display: 3500
+
+# Assumed common component baseline yield.
+base_yields:
+  skin_panel: 0.56
+  frame_section: 0.56
+  battery: 0.56
+  lighting_unit: 0.56
+  seat_assembly: 0.56
+  door_assembly: 0.56
+  flight_surface: 0.56
+  turbine_blade: 0.56
+  bearing: 0.56
+  nav_unit: 0.56
+  comm_radio: 0.56
+  display: 0.56
+
+# Assumed inspection cost and time.
+inspection_costs:
+  skip: {cost: 0, time_min: 0}
+  l1: {cost: 50, time_min: 20}
+  l2: {cost: 100, time_min: 35}
+
+inspection_observation_noise:
+  l1_sd: 0.15
+  l2_sd: 0.05
+
+inspection_update_weights:
+  l1: 0.50
+  l2: 0.90
+
+processing_costs:
+  l2: {cost: 600, time_min: 150}
+  l1: {cost: 100, time_min: 30, recovery_fraction: 0.60}
+  scrap: {cost: 0, time_min: 10}
+
+# Stylized 20-mechanic weekly labor budget.
+capacity:
+  weekly_hours: 800
+
+thresholds:
+  tau_h: 0.50
+  tau_l: 0.25
+
+routing_thresholds:
+  recover: 0.70
+  partial: 0.30

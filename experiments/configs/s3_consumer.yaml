@@ -1,0 +1,88 @@
+# S3: Consumer Electronics - stylized benchmark assumptions
+# See calibration/ASSUMPTION_PROVENANCE.md for scope and provenance.
+name: s3_consumer_electronics
+n_assets: 1000
+
+asset_types:
+  - {name: smartphone, weight: 0.45, components: {pcb: 1, battery: 1, display: 1, camera: 2}}
+  - {name: laptop, weight: 0.30, components: {pcb: 1, battery: 1, display: 1, keyboard: 1, ssd: 1}}
+  - {name: tablet, weight: 0.25, components: {pcb: 1, battery: 1, display: 1}}
+
+# Assumed latent condition mix and corresponding true-yield ranges.
+note_distribution:
+  functional_return: 0.25
+  cosmetic: 0.15
+  degraded: 0.30
+  dead: 0.20
+  hazard: 0.10
+
+condition_yield_ranges:
+  functional_return: [0.90, 0.99]
+  cosmetic: [0.75, 0.90]
+  degraded: [0.40, 0.65]
+  dead: [0.10, 0.30]
+  hazard: [0.02, 0.10]
+
+note_noise:
+  p_omit: 0.15
+  p_mislabel: 0.25
+
+realized_yield_concentration: 20.0
+
+# Assumed per-component share of recovery value.
+# These are LOW because S3 value is primarily at L0 (whole-unit refurb)
+prices:
+  pcb: 8
+  battery: 5
+  display: 15
+  camera: 3
+  keyboard: 7
+  ssd: 12
+
+# Assumed common component baseline yield.
+base_yields:
+  pcb: 0.62
+  battery: 0.62
+  display: 0.62
+  camera: 0.62
+  keyboard: 0.62
+  ssd: 0.62
+
+# Assumed inspection cost and time.
+inspection_costs:
+  skip: {cost: 0, time_min: 0}
+  l1: {cost: 10, time_min: 3}
+  l2: {cost: 20, time_min: 5}
+
+inspection_observation_noise:
+  l1_sd: 0.15
+  l2_sd: 0.05
+
+inspection_update_weights:
+  l1: 0.50
+  l2: 0.90
+
+processing_costs:
+  l2: {cost: 12, time_min: 10}
+  l1: {cost: 6, time_min: 4, recovery_fraction: 0.60}
+  l0_refurb: {cost: 8, time_min: 5}
+  scrap: {cost: 0, time_min: 1}
+  rework: {cost: 30, time_min: 8, trigger_yield_below: 0.30}
+  # Assumed whole-unit refurbishment values.
+  refurb_values:
+    smartphone: 120
+    laptop: 250
+    tablet: 180
+
+# Stylized 20-worker daily labor budget.
+capacity:
+  daily_hours: 160
+
+# Prespecified reference thresholds; sensitivity is reported separately.
+thresholds:
+  tau_h: 0.50
+  tau_l: 0.45
+
+routing_thresholds:
+  recover: 0.70
+  partial: 0.30

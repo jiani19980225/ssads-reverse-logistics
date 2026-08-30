@@ -1,0 +1,79 @@
+# S1: IT Infrastructure - stylized benchmark assumptions
+# See calibration/ASSUMPTION_PROVENANCE.md for scope and provenance.
+name: s1_it_infrastructure
+n_assets: 500
+
+asset_types:
+  - {name: standard_compute, weight: 0.35, components: {cpu: 2, dimm: 16, ssd: 2}}
+  - {name: gpu_heavy, weight: 0.20, components: {cpu: 2, dimm: 16, gpu: 4, ssd: 2}}
+  - {name: storage_heavy, weight: 0.20, components: {cpu: 2, dimm: 8, hdd: 12}}
+  - {name: high_memory, weight: 0.15, components: {cpu: 2, dimm: 32, ssd: 2}}
+  - {name: older_gen, weight: 0.10, components: {cpu: 2, dimm: 16, ssd: 2}}
+
+# Assumed used/refurbished recovery values.
+prices:
+  cpu: 275
+  dimm: 22
+  gpu: 1900
+  ssd: 70
+  hdd: 35
+
+# Assumed component baseline yields.
+base_yields:
+  cpu: 0.902
+  dimm: 0.868
+  gpu: 0.852
+  ssd: 0.742
+  hdd: 0.650
+
+# Assumed condition mix.
+note_distribution:
+  clean: 0.25
+  mixed: 0.35
+  damaged: 0.25
+  ambiguous: 0.15
+
+condition_yield_ranges:
+  clean: [0.85, 0.99]
+  mixed: [0.45, 0.75]
+  damaged: [0.05, 0.30]
+  ambiguous: [0.30, 0.70]
+
+note_noise:
+  p_omit: 0.15
+  p_mislabel: 0.25
+
+realized_yield_concentration: 20.0
+
+# Assumed inspection cost and time.
+inspection_costs:
+  skip: {cost: 0, time_min: 0}
+  l1: {cost: 19, time_min: 15}
+  l2: {cost: 75, time_min: 60}
+
+inspection_observation_noise:
+  l1_sd: 0.15
+  l2_sd: 0.05
+
+inspection_update_weights:
+  l1: 0.50
+  l2: 0.90
+
+processing_costs:
+  l2: {cost: 40, time_min: 32}
+  l1: {cost: 13, time_min: 10, recovery_fraction: 0.60}
+  scrap: {cost: 0, time_min: 5}
+
+# Stylized 15-technician weekly labor budget.
+capacity:
+  weekly_hours: 600
+
+# Prespecified reference thresholds; sensitivity is reported separately.
+thresholds:
+  tau_h: 0.50
+  tau_l: 0.25
+
+# Fixed routing rule used only by the semantic-only comparator.
+routing_thresholds:
+  recover: 0.70
+  partial: 0.30

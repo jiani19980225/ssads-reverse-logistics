@@ -1,0 +1,16 @@
+scenario,variant,n_seeds,p_omit,p_mislabel,population_protocol,TRV_mean,TRV_std,RPR_mean,ICS_mean,policy_skip_pct,policy_quick_pct,policy_full_pct
+S1: IT Infrastructure,default,30,0.15,0.25,shared_latent_separate_note_rng,606672.895,42710.621,1.0,34371.333,0.670667,0.329333,0.0
+S1: IT Infrastructure,no_noise,30,0.0,0.0,shared_latent_separate_note_rng,607759.695,42678.731,1.0,35458.133,0.785067,0.214933,0.0
+S1: IT Infrastructure,high_omit,30,0.3,0.25,shared_latent_separate_note_rng,605531.628,42685.999,1.0,33230.067,0.550533,0.449467,0.0
+S1: IT Infrastructure,high_mislabel,30,0.15,0.4,shared_latent_separate_note_rng,606695.062,42711.033,1.0,34393.5,0.673,0.327,0.0
+S1: IT Infrastructure,high_both,30,0.3,0.4,shared_latent_separate_note_rng,605562.662,42690.496,1.0,33261.1,0.5538,0.4462,0.0
+S2: Aviation MRO,default,30,0.15,0.25,shared_latent_separate_note_rng,1606961.367,65769.39,0.508333,29006.667,0.580133,0.0,0.419867
+S2: Aviation MRO,no_noise,30,0.0,0.0,shared_latent_separate_note_rng,1651083.548,66255.576,0.533,33920.0,0.6784,0.0,0.3216
+S2: Aviation MRO,high_omit,30,0.3,0.25,shared_latent_separate_note_rng,1564699.197,61834.767,0.4832,24013.333,0.480267,0.0,0.519733
+S2: Aviation MRO,high_mislabel,30,0.15,0.4,shared_latent_separate_note_rng,1601923.04,66061.93,0.509133,29213.333,0.584267,0.0,0.415733
+S2: Aviation MRO,high_both,30,0.3,0.4,shared_latent_separate_note_rng,1564161.932,61723.336,0.4836,24090.0,0.4818,0.0,0.5182
+S3: Consumer Electronics,default,30,0.15,0.25,shared_latent_separate_note_rng,70454.391,2026.982,0.9493,991.667,0.0,0.099167,0.900833
+S3: Consumer Electronics,no_noise,30,0.0,0.0,shared_latent_separate_note_rng,70746.532,2056.921,0.961567,1237.0,0.0,0.1237,0.8763
+S3: Consumer Electronics,high_omit,30,0.3,0.25,shared_latent_separate_note_rng,70223.253,2018.706,0.9399,804.0,0.0,0.0804,0.9196
+S3: Consumer Electronics,high_mislabel,30,0.15,0.4,shared_latent_separate_note_rng,70421.591,2016.953,0.947933,965.0,0.0,0.0965,0.9035
+S3: Consumer Electronics,high_both,30,0.3,0.4,shared_latent_separate_note_rng,70176.77,1984.544,0.937933,765.333,0.0,0.076533,0.923467
