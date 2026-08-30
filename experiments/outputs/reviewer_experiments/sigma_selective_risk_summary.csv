@@ -1,0 +1,10 @@
+scenario,extractor,n_seeds,n,tolerance_abs_phi_error,mean_abs_phi_error,within_tolerance_rate,sigma_abs_error_correlation,high_score_skip_count,high_score_skip_pct,bad_high_score_skip_count,bad_high_score_skip_cond_rate
+S1: IT Infrastructure,keyword,30,15000,0.2,0.270252,0.430067,-0.521363,5909,0.393933,282,0.047724
+S1: IT Infrastructure,strong,30,15000,0.2,0.137885,0.770533,n/a,3470,0.231333,0,0.0
+S1: IT Infrastructure,llm,30,15000,0.2,0.157528,0.7224,-0.068911,4614,0.3076,126,0.027308
+S2: Aviation MRO,keyword,30,15000,0.2,0.313076,0.482,-0.652683,4188,0.2792,421,0.100525
+S2: Aviation MRO,strong,30,15000,0.2,0.151027,0.791,-0.754552,3512,0.234133,0,0.0
+S2: Aviation MRO,llm,30,15000,0.2,0.109376,0.838533,-0.332554,2675,0.178333,0,0.0
+S3: Consumer Electronics,keyword,30,30000,0.2,0.320871,0.437233,-0.355256,0,0.0,0,n/a
+S3: Consumer Electronics,strong,30,30000,0.2,0.140155,0.782167,-0.626682,10767,0.3589,0,0.0
+S3: Consumer Electronics,llm,30,30000,0.2,0.132694,0.727933,-0.49625,10767,0.3589,0,0.0

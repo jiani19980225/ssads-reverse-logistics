@@ -1,0 +1,7 @@
+scenario,method,n_seeds,TRV_mean,TRV_std,per_asset_TRV_mean,RPR_mean,ICS_mean,policy_skip_pct,policy_quick_pct,policy_full_pct
+S1: IT Infrastructure,ours_no_ranking,30,611006.611,43912.109,1222.013,1.0,34339.667,0.667333,0.332667,0.0
+S1: IT Infrastructure,ours,30,611006.611,43912.109,1222.013,1.0,34339.667,0.667333,0.332667,0.0
+S2: Aviation MRO,ours_no_ranking,30,994119.392,64298.117,1988.239,0.507333,28813.333,0.576267,0.0,0.423733
+S2: Aviation MRO,ours,30,1602971.274,79520.823,3205.943,0.507333,28813.333,0.576267,0.0,0.423733
+S3: Consumer Electronics,ours_no_ranking,30,67228.653,2815.642,67.229,0.948567,977.0,0.0,0.0977,0.9023
+S3: Consumer Electronics,ours,30,71202.406,2464.408,71.202,0.948567,977.0,0.0,0.0977,0.9023

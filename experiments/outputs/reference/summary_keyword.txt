@@ -1,0 +1,59 @@
+[extractor for semantic methods: keyword]
+
+====================================================================================================
+S1: IT Infrastructure   (mean +/- std over 30 seeds)
+====================================================================================================
+Method                                          TRV mean     TRV std            RPR     ICS mean
+----------------------------------------------------------------------------------------------------
+Random routing                                   333,480      31,422   67.5%+/-2.1%       37,500
+FIFO routing                                     614,167      43,922  100.0%+/-0.0%       37,500
+Structured + noisy full inspection               404,971      41,882   25.8%+/-0.0%            0
+Structured + semantic adaptive inspection        611,007      43,912  100.0%+/-0.0%       34,340
+Oracle full inspection                           406,265      41,875   25.8%+/-0.0%            0
+No-signal / no-inspection                        614,167      43,922  100.0%+/-0.0%       37,500
+Semantic-only / threshold routing                552,783      40,414   99.8%+/-0.2%       34,340
+SSADS-Keyword                                    611,007      43,912  100.0%+/-0.0%       34,340
+----------------------------------------------------------------------------------------------------
+Lift (SSADS-Keyword - Structured + noisy full inspection): 206,036  (+50.9%)
+Paired-bootstrap 95% CI for percentage lift: [+49.2%, +52.8%]
+Paired Wilcoxon (SSADS-Keyword vs structured noisy full inspection, n=30): W=0.0, p=1.86e-09
+NOTE: p-value reflects simulation stability across seeds, not cross-dataset generalization.
+
+====================================================================================================
+S2: Aviation MRO   (mean +/- std over 30 seeds)
+====================================================================================================
+Method                                          TRV mean     TRV std            RPR     ICS mean
+----------------------------------------------------------------------------------------------------
+Random routing                                 1,127,985      76,174   67.5%+/-2.1%       50,000
+FIFO routing                                   1,232,594      66,668   61.4%+/-0.0%       50,000
+Structured + noisy full inspection             1,382,230      69,394   36.4%+/-0.0%            0
+Structured + semantic adaptive inspection      1,618,424      80,963   50.7%+/-0.6%       28,813
+Oracle full inspection                         1,388,560      70,521   36.4%+/-0.0%            0
+No-signal / no-inspection                      1,676,361      91,130   61.4%+/-0.0%       50,000
+Semantic-only / threshold routing              1,677,436      93,687   95.9%+/-0.8%       28,813
+SSADS-Keyword                                  1,602,971      79,521   50.7%+/-0.6%       28,813
+----------------------------------------------------------------------------------------------------
+Lift (SSADS-Keyword - Structured + noisy full inspection): 220,741  (+16.0%)
+Paired-bootstrap 95% CI for percentage lift: [+15.6%, +16.4%]
+Paired Wilcoxon (SSADS-Keyword vs structured noisy full inspection, n=30): W=0.0, p=1.86e-09
+NOTE: p-value reflects simulation stability across seeds, not cross-dataset generalization.
+
+====================================================================================================
+S3: Consumer Electronics   (mean +/- std over 30 seeds)
+====================================================================================================
+Method                                          TRV mean     TRV std            RPR     ICS mean
+----------------------------------------------------------------------------------------------------
+Random routing                                    -5,202         537   66.5%+/-1.3%       20,000
+FIFO routing                                      81,355       2,744  100.0%+/-0.0%       20,000
+Structured + noisy full inspection                69,927       2,351   90.0%+/-0.0%            0
+Structured + semantic adaptive inspection         71,218       2,461   94.9%+/-0.6%          977
+Oracle full inspection                            70,122       2,349   90.0%+/-0.0%            0
+No-signal / no-inspection                         81,355       2,744  100.0%+/-0.0%       20,000
+Semantic-only / threshold routing                 41,863       3,049   64.2%+/-1.8%          977
+SSADS-Keyword                                     71,202       2,464   94.9%+/-0.6%          977
+----------------------------------------------------------------------------------------------------
+Lift (SSADS-Keyword - Structured + noisy full inspection): 1,275  (+1.8%)
+Paired-bootstrap 95% CI for percentage lift: [+1.7%, +1.9%]
+Paired Wilcoxon (SSADS-Keyword vs structured noisy full inspection, n=30): W=0.0, p=1.86e-09
+NOTE: p-value reflects simulation stability across seeds, not cross-dataset generalization.
+

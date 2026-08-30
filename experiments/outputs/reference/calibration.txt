@@ -1,0 +1,40 @@
+========================================================================
+SIGNAL-QUALITY ANALYSIS - extractor phi vs latent yield factor
+(noisy note observation; pooled over 30 seeds)
+========================================================================
+Scenario                          N   r(phi,y)   r(yhat,y)  phi=1.0 frac
+------------------------------------------------------------------------
+S1: IT Infrastructure         15000      0.485       0.487        27.8%
+S2: Aviation MRO              15000      0.323       0.323        42.4%
+S3: Consumer Electronics      30000      0.363       0.363        54.7%
+------------------------------------------------------------------------
+r(phi,y)  = Pearson r between phi and the latent yield factor
+r(yhat,y) = Pearson r between value-weighted component-yield prior and target
+'phi=1.0 frac' = share of assets where the extractor found no signal and
+                 fell back to the uninformative prior (phi=1.0).
+
+========================================================================
+EXTRACTOR-QUALITY LADDER (synthetic benchmark)
+========================================================================
+Scenario                          N    Keyword r   Phrase-matcher r
+------------------------------------------------------------------------
+S1: IT Infrastructure         15000        0.485              0.729
+S2: Aviation MRO              15000        0.323              0.619
+S3: Consumer Electronics      30000        0.363              0.742
+------------------------------------------------------------------------
+Keyword r        = restricted-vocabulary reproducible reference.
+Phrase-matcher r = complete vocabulary, discrete phi per condition.
+Both readers are deterministic; the note observation is corrupted before extraction.
+Run with --llm to add a (typically higher) LLM column.
+
+========================================================================
+LLM EXTRACTOR (deepseek: deepseek-chat) - bounded subsample, cached
+========================================================================
+Scenario                          N   LLM r(phi,y)
+------------------------------------------------------------------------
+S1: IT Infrastructure           150          0.636
+S2: Aviation MRO                150          0.738
+S3: Consumer Electronics        150          0.799
+------------------------------------------------------------------------
+LLM r on the synthetic benchmark (150 records/scenario).
+Responses cached under outputs/llm_cache/ for reproducible re-runs.

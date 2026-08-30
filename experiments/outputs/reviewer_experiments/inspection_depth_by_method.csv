@@ -1,0 +1,25 @@
+scenario,method,semantic_extractor,n_seeds,n_assets,policy_skip_mean,policy_skip_std,policy_skip_pct,policy_quick_mean,policy_quick_std,policy_quick_pct,policy_full_mean,policy_full_std,policy_full_pct,charged_inspected_pct_mean,charged_inspected_pct_std
+S1: IT Infrastructure,random,n/a,30,500,500.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+S1: IT Infrastructure,rule_based,n/a,30,500,500.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+S1: IT Infrastructure,structured,n/a,30,500,0.0,0.0,0.0,0.0,0.0,0.0,500.0,0.0,1.0,1.0,0.0
+S1: IT Infrastructure,combined,keyword+structured,30,500,333.667,9.546,0.667333,166.333,9.546,0.332667,0.0,0.0,0.0,0.332667,0.019092
+S1: IT Infrastructure,oracle,n/a,30,500,0.0,0.0,0.0,0.0,0.0,0.0,500.0,0.0,1.0,1.0,0.0
+S1: IT Infrastructure,no_signal,n/a,30,500,500.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+S1: IT Infrastructure,semantic_only,keyword,30,500,333.667,9.546,0.667333,166.333,9.546,0.332667,0.0,0.0,0.0,0.332667,0.019092
+S1: IT Infrastructure,ours,keyword,30,500,333.667,9.546,0.667333,166.333,9.546,0.332667,0.0,0.0,0.0,0.332667,0.019092
+S2: Aviation MRO,random,n/a,30,500,500.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+S2: Aviation MRO,rule_based,n/a,30,500,500.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+S2: Aviation MRO,structured,n/a,30,500,0.0,0.0,0.0,0.0,0.0,0.0,500.0,0.0,1.0,1.0,0.0
+S2: Aviation MRO,combined,keyword+structured,30,500,288.133,11.629,0.576267,0.0,0.0,0.0,211.867,11.629,0.423733,0.423733,0.023257
+S2: Aviation MRO,oracle,n/a,30,500,0.0,0.0,0.0,0.0,0.0,0.0,500.0,0.0,1.0,1.0,0.0
+S2: Aviation MRO,no_signal,n/a,30,500,500.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+S2: Aviation MRO,semantic_only,keyword,30,500,288.133,11.629,0.576267,0.0,0.0,0.0,211.867,11.629,0.423733,0.423733,0.023257
+S2: Aviation MRO,ours,keyword,30,500,288.133,11.629,0.576267,0.0,0.0,0.0,211.867,11.629,0.423733,0.423733,0.023257
+S3: Consumer Electronics,random,n/a,30,1000,1000.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+S3: Consumer Electronics,rule_based,n/a,30,1000,1000.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+S3: Consumer Electronics,structured,n/a,30,1000,0.0,0.0,0.0,0.0,0.0,0.0,1000.0,0.0,1.0,1.0,0.0
+S3: Consumer Electronics,combined,keyword+structured,30,1000,0.0,0.0,0.0,97.7,12.354,0.0977,902.3,12.354,0.9023,1.0,0.0
+S3: Consumer Electronics,oracle,n/a,30,1000,0.0,0.0,0.0,0.0,0.0,0.0,1000.0,0.0,1.0,1.0,0.0
+S3: Consumer Electronics,no_signal,n/a,30,1000,1000.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+S3: Consumer Electronics,semantic_only,keyword,30,1000,0.0,0.0,0.0,97.7,12.354,0.0977,902.3,12.354,0.9023,1.0,0.0
+S3: Consumer Electronics,ours,keyword,30,1000,0.0,0.0,0.0,97.7,12.354,0.0977,902.3,12.354,0.9023,1.0,0.0

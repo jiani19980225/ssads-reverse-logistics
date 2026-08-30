@@ -1,0 +1,4 @@
+scenario,n_seeds,ours_TRV_mean,matched_random_TRV_mean,ours_minus_matched_TRV,paired_wilcoxon_p,ours_RPR_mean,matched_random_RPR_mean,inspection_cost_identical
+S1: IT Infrastructure,30,611006.611,611006.611,0.0,n/a,1.0,1.0,True
+S2: Aviation MRO,30,1602971.274,1549071.02,53900.253,1.862645149230957e-09,0.507333,0.507333,True
+S3: Consumer Electronics,30,71202.406,71184.424,17.981,6.286613643169403e-05,0.948567,0.948567,True

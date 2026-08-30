@@ -1,0 +1,10 @@
+scenario,method,n_seeds,n_records,pearson_r_phi_vs_latent_factor,mean_absolute_error,training_population
+S1: IT Infrastructure,text_only_keyword,30,15000,0.48485,0.270252,none
+S1: IT Infrastructure,structured_only,30,15000,-0.009343,0.230664,"4000 independent assets, seed 99999"
+S1: IT Infrastructure,combined_keyword_structured,30,15000,0.705951,0.151378,"4000 independent assets, seed 99999"
+S2: Aviation MRO,text_only_keyword,30,15000,0.323123,0.313076,none
+S2: Aviation MRO,structured_only,30,15000,0.004624,0.209802,"4000 independent assets, seed 99999"
+S2: Aviation MRO,combined_keyword_structured,30,15000,0.597778,0.154626,"4000 independent assets, seed 99999"
+S3: Consumer Electronics,text_only_keyword,30,30000,0.363474,0.320871,none
+S3: Consumer Electronics,structured_only,30,30000,-0.008399,0.277866,"4000 independent assets, seed 99999"
+S3: Consumer Electronics,combined_keyword_structured,30,30000,0.532439,0.219375,"4000 independent assets, seed 99999"

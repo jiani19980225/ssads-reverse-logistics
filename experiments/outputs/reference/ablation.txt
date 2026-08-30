@@ -1,0 +1,39 @@
+==========================================================================
+S1: IT Infrastructure   (mean over 30 seeds)
+==========================================================================
+Variant               TRV ($K)    ICS ($K)   %inspected
+--------------------------------------------------------------------------
+SSADS-Keyword              611          34          33%
+Matched-cost random         611          34          33%
+No-adaptive (all)          405           0         100%
+Blind recovery             614          38           0%
+--------------------------------------------------------------------------
+SSADS-Keyword == matched-cost random (identical)
+NOTE: equal inspection spend, so the gap measures targeting value, not inspecting-less. p reflects seed stability only.
+
+==========================================================================
+S2: Aviation MRO   (mean over 30 seeds)
+==========================================================================
+Variant               TRV ($K)    ICS ($K)   %inspected
+--------------------------------------------------------------------------
+SSADS-Keyword            1,603          29          42%
+Matched-cost random       1,549          29          42%
+No-adaptive (all)        1,380           0         100%
+Blind recovery           1,676          50           0%
+--------------------------------------------------------------------------
+SSADS-Keyword vs matched-cost random: +53,900 dollars TRV, paired Wilcoxon p=1.86e-09
+NOTE: equal inspection spend, so the gap measures targeting value, not inspecting-less. p reflects seed stability only.
+
+==========================================================================
+S3: Consumer Electronics   (mean over 30 seeds)
+==========================================================================
+Variant               TRV ($K)    ICS ($K)   %inspected
+--------------------------------------------------------------------------
+SSADS-Keyword               71           1         100%
+Matched-cost random          71           1         100%
+No-adaptive (all)           70           0         100%
+Blind recovery              81          20           0%
+--------------------------------------------------------------------------
+SSADS-Keyword vs matched-cost random: +18 dollars TRV, paired Wilcoxon p=6.29e-05
+NOTE: equal inspection spend, so the gap measures targeting value, not inspecting-less. p reflects seed stability only.
+

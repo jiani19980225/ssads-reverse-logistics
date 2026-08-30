@@ -1,0 +1,13 @@
+scenario,held_out_family,n_seeds,n_records,pearson_r_phi_vs_latent_factor,fallback_rate,TRV_mean,TRV_pct_change_vs_baseline,high_score_skip_count,bad_high_score_skip_count,bad_high_score_skip_cond_rate
+S1: IT Infrastructure,none,30,15000,0.48485,0.2778,611006.611,0.0,5909,282,0.047724
+S1: IT Infrastructure,ambiguous,30,15000,0.48485,0.2778,611006.611,0.0,5909,282,0.047724
+S1: IT Infrastructure,negative,30,15000,-0.2401,0.499467,608930.544,-0.3398,6732,376,0.055853
+S1: IT Infrastructure,positive,30,15000,0.504234,0.509133,607785.477,-0.5272,0,0,n/a
+S2: Aviation MRO,none,30,15000,0.323123,0.423733,1602971.274,0.0,4188,421,0.100525
+S2: Aviation MRO,ambiguous,30,15000,0.323123,0.423733,1602971.274,0.0,4188,421,0.100525
+S2: Aviation MRO,negative,30,15000,-0.085299,0.6996,1492333.152,-6.9021,4188,421,0.100525
+S2: Aviation MRO,positive,30,15000,0.370865,0.702933,1503851.73,-6.1835,0,0,n/a
+S3: Consumer Electronics,none,30,30000,0.363474,0.546633,71202.406,0.0,0,0,n/a
+S3: Consumer Electronics,ambiguous,30,30000,0.22203,0.690033,71215.432,0.0183,0,0,n/a
+S3: Consumer Electronics,negative,30,30000,0.183229,0.705267,71199.332,-0.0043,0,0,n/a
+S3: Consumer Electronics,positive,30,30000,0.401835,0.697967,69886.5,-1.8481,0,0,n/a

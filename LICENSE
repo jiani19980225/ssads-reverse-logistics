@@ -1,0 +1,60 @@
+Repository Licensing
+
+Code and data
+-------------
+
+The MIT License below applies only to the software source code, scripts,
+configuration files, synthetic data, and generated experiment artifacts in
+`experiments/`, together with the repository-level software tooling
+`pyproject.toml` and `verify_integrity.sh`, and the repository documentation
+`README.md` and `REPRODUCIBILITY.md`.
+
+Paper and third-party material
+------------------------------
+
+The manuscript and associated scholarly content in `paper/`, including
+`main_7pg.tex` and `main_7pg.pdf`, are expressly excluded from the MIT License.
+They are Copyright (c) 2026 the paper authors, all rights reserved, unless and
+until a publishing agreement states otherwise. After execution of an IEEE
+Copyright Form, the accepted manuscript and any permitted posting are governed
+by the applicable IEEE copyright and posting terms, and the copy posted here
+carries the notice below. The final IEEE-published version of record is not
+licensed or distributed under this repository's MIT License and is not posted
+in this repository.
+
+IEEE author-posting notice, applicable to `paper/main_7pg.pdf` once the IEEE
+Copyright Form has been executed:
+
+  (c) 2026 IEEE. Personal use of this material is permitted. Permission from
+  IEEE must be obtained for all other uses, in any current or future media,
+  including reprinting/republishing this material for advertising or
+  promotional purposes, creating new collective works, for resale or
+  redistribution to servers or lists, or reuse of any copyrighted component of
+  this work in other works.
+
+Third-party files retain their own licenses. In particular,
+`paper/IEEEtran.cls` is distributed under the LaTeX Project Public License as
+stated in that file.
+
+MIT License (code and data only)
+--------------------------------
+
+Copyright (c) 2026 SSADS Authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

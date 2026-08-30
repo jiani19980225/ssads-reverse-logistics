@@ -1,0 +1,4 @@
+scenario,n_seeds,n_records,unique_notes,unique_note_ratio,mean_note_words,median_note_words,p10_note_words,p90_note_words,mean_unique_note_words,vocab_size,type_token_ratio,true_condition_classes,observed_condition_classes
+S1: IT Infrastructure,30,15000,27,0.0018,9.841,11.0,7.0,12.0,10.37,133,0.000901,4,4
+S2: Aviation MRO,30,15000,4840,0.322667,9.575,10.0,8.0,11.0,10.079,3690,0.025691,6,7
+S3: Consumer Electronics,30,30000,43,0.001433,7.96,8.0,6.0,9.0,8.0,152,0.000637,5,6
